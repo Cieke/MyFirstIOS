@@ -19,11 +19,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
- 
-    @IBAction func clicked(_ sender: AnyObject) {
-        
-        print("clicked")
+    @IBOutlet weak var myLabel: UILabel!
+    var count = 0
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
+    
+    @IBAction func clicked(_ sender: AnyObject) {
+        count += 1
+        myLabel.text = "changed \(count)"
+    }
+   
 }
 

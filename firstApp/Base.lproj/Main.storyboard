@@ -18,8 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy5-Ve-QdQ">
+                                <frame key="frameInset" minX="137" minY="69" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dS6-Co-YZM"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pL8-hT-F1m">
-                                <frame key="frameInset" minX="113" minY="28" width="95" height="26"/>
+                                <frame key="frameInset" minX="113" minY="113" width="95" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20615764501240014" green="0.2028503031138055" blue="0.2094649869109948" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.6077222420409103" green="1" blue="0.57330191601219871" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,21 +35,16 @@
                                 <color key="textColor" red="0.60772224200000002" green="1" blue="0.57330191600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xy5-Ve-QdQ">
-                                <frame key="frameInset" minX="69" minY="180" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dS6-Co-YZM"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="myLabel" destination="pL8-hT-F1m" id="Nnb-g4-GBI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.375" y="35.91549295774648"/>
+            <point key="canvasLocation" x="62" y="-411"/>
         </scene>
     </scenes>
     <color key="tintColor" red="0.55302251716999762" green="1" blue="0.59243904961534133" alpha="1" colorSpace="calibratedRGB"/>
